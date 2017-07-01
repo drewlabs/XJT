@@ -202,12 +202,12 @@ def main():
         strip_ns = 1
     if options.strip_nl:
         input = input.replace('\n', '').replace('\r', '')
-    if (options.type == "xml2json"):
+    if options.type == "xml2json":
         out = xml2json(input, options, strip_ns, strip)
     else:
         out = json2xml(input)
 
-    if (options.out):
+    if options.out:
         file = open(options.out, 'w')
         file.write(out)
         file.close()

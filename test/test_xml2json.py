@@ -7,6 +7,7 @@ import os
 xmlstring = ""
 options = None
 
+
 class SimplisticTest(unittest.TestCase):
 
     def setUp(self):
@@ -36,12 +37,13 @@ class SimplisticTest(unittest.TestCase):
         self.assertFalse(json_string.find("{http://www.w3.org/TR/html4/}table") != -1)
 
         # TODO , attribute shall be kept
-        #self.assertTrue(json_string.find("@class") != -1)
+        # self.assertTrue(json_string.find("@class") != -1)
 
-        #print json_data["root"]["table"]
-        #print json_data["root"]["table"][0]["tr"]
+        # print json_data["root"]["table"]
+        # print json_data["root"]["table"][0]["tr"]
         self.assertTrue("table" in json_data["root"])
-        self.assertEqual(json_data["root"]["table"][0]["tr"]["td"] , ["Apples", "Bananas"])
+        self.assertEqual(json_data["root"]["table"][0]["tr"]["td"], ["Apples", "Bananas"])
+
 
 if __name__ == '__main__':
     unittest.main()
