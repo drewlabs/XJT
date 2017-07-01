@@ -19,7 +19,7 @@ XJT is released under the terms of the [Apache License](http://www.apache.org/li
 Contributors
 ------------
 
-Initial Contributor - Nirmal Sarswat
+Initial Contributor - [Nirmal Sarswat](https://github.com/vivonk)
 
 How it works
 ------------
